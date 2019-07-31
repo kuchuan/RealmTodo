@@ -15,23 +15,35 @@ class ViewController: UIViewController {
     
     var todos:[Todo] = []
     
+    
 
+    fileprivate func reloadTableView() {
+        //Realmに接続
+        let realm = try! Realm()
+        
+        //Todoの一覧を取得する(reversedは)
+        todos = realm.objects(Todo.self).reversed()
+        
+        //画面の更新
+        tableView.reloadData()
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         tableView.dataSource = self
         tableView.delegate = self
         
-        //Realmに接続
-        let realm = try! Realm()
-    
-        //Todoの一覧を取得する(reversedは)
-        todos = realm.objects(Todo.self).reversed()
-        
-        //画面の更新
-        tableView.reloadData()
-        
     }
+    
+    //画面が表示されるたびに実行
+    override func viewWillAppear(_ animated: Bool) {
+        reloadTableView()
+    }
+    
+    
 
     @IBAction func didClickAddBtn(_ sender: UIButton) {
         

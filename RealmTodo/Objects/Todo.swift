@@ -6,4 +6,18 @@
 //  Copyright © 2019 堀川浩二. All rights reserved.
 //
 
-import Foundation
+import RealmSwift
+
+class Todo: Object {
+    
+    // ID （連番）･･･ぜっていにかぶらないデータにする
+    @objc dynamic var id: Int = 0
+    
+    // タイトル
+    @objc dynamic var title: String = ""
+    
+    //　登録日時
+    @objc dynamic var date: Date = Date()
+    
+    
+}

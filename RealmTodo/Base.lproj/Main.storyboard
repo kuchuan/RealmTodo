@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Bjw-cv-oJl">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Bjw-cv-oJl">
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bjw-cv-oJl" id="PX0-Hr-mmp">
@@ -43,10 +43,14 @@
                                 <rect key="frame" x="302" y="7" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="新規登録"/>
+                                <connections>
+                                    <action selector="didClickAddBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WYJ-oQ-bBE"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="tableView" destination="sa2-ub-PVV" id="gf9-Ag-bsS"/>
                         <segue destination="iB6-Fb-mKC" kind="show" identifier="toNext" id="reQ-2E-W5f"/>
                     </connections>
                 </viewController>
@@ -54,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="117.85714285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--Inpuit View Controller-->
         <scene sceneID="2aB-hf-a7E">
             <objects>
-                <viewController id="iB6-Fb-mKC" sceneMemberID="viewController">
+                <viewController id="iB6-Fb-mKC" customClass="InpuitViewController" customModule="RealmTodo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1cf-1e-CIF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,15 +79,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="didClickBT:" destination="iB6-Fb-mKC" eventType="touchUpInside" id="lRJ-fL-T0L"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hRM-uL-yGy"/>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="QyU-nO-KAS" id="i9m-3T-irI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="amf-xN-t8T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1905.7971014492755" y="117.85714285714285"/>
+            <point key="canvasLocation" x="1857" y="118"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NlP-kK-QHJ">

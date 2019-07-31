@@ -62,6 +62,9 @@ class InpuitViewController: UIViewController {
         //新規タスクを追加
         createNewTodo(text)
         
+        //前の画面に戻る
+        navigationController?.popViewController(animated: true)
+        
 
     }
     

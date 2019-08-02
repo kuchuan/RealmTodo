@@ -79,7 +79,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "noNext" {
+        if segue.identifier == "toNext" {
             //次の画面のcontrollerを取得する
             let inputVC = segue.destination as! InputViewController
             

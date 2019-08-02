@@ -9,6 +9,4 @@ target 'RealmTodo' do
 
 	pod 'RealmSwift'
 
-
-
 end

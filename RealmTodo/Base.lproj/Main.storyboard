@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="117.85714285714285"/>
         </scene>
-        <!--Inpuit View Controller-->
+        <!--Input View Controller-->
         <scene sceneID="2aB-hf-a7E">
             <objects>
-                <viewController id="iB6-Fb-mKC" customClass="InpuitViewController" customModule="RealmTodo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iB6-Fb-mKC" customClass="InputViewController" customModule="RealmTodo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1cf-1e-CIF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

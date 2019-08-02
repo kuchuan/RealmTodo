@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		482D38C522F3C1CB00C4C006 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482D38C422F3C1CB00C4C006 /* InputViewController.swift */; };
 		48B317D222EFEB8000F0F267 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B317D122EFEB8000F0F267 /* AppDelegate.swift */; };
 		48B317D422EFEB8000F0F267 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B317D322EFEB8000F0F267 /* ViewController.swift */; };
 		48B317D722EFEB8000F0F267 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B317D522EFEB8000F0F267 /* Main.storyboard */; };
 		48B317D922EFEB8100F0F267 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B317D822EFEB8100F0F267 /* Assets.xcassets */; };
 		48B317DC22EFEB8100F0F267 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B317DA22EFEB8100F0F267 /* LaunchScreen.storyboard */; };
-		48B317E422EFF0B100F0F267 /* InpuitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B317E322EFF0B100F0F267 /* InpuitViewController.swift */; };
 		48B317E622EFF0E500F0F267 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B317E522EFF0E500F0F267 /* Todo.swift */; };
 		C5B4C0F0713D487A12A7EDFC /* Pods_RealmTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5023853C9272407DD7B05145 /* Pods_RealmTodo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		482D38C422F3C1CB00C4C006 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		48B317CE22EFEB8000F0F267 /* RealmTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B317D122EFEB8000F0F267 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48B317D322EFEB8000F0F267 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +26,6 @@
 		48B317D822EFEB8100F0F267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48B317DB22EFEB8100F0F267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48B317DD22EFEB8100F0F267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48B317E322EFF0B100F0F267 /* InpuitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InpuitViewController.swift; sourceTree = "<group>"; };
 		48B317E522EFF0E500F0F267 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		5023853C9272407DD7B05145 /* Pods_RealmTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8F2CC3A0078BA472411D02 /* Pods-RealmTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTodo.release.xcconfig"; path = "Target Support Files/Pods-RealmTodo/Pods-RealmTodo.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,8 +79,8 @@
 		48B317E722EFF13E00F0F267 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				48B317E322EFF0B100F0F267 /* InpuitViewController.swift */,
 				48B317D322EFEB8000F0F267 /* ViewController.swift */,
+				482D38C422F3C1CB00C4C006 /* InputViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -225,10 +225,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48B317E422EFF0B100F0F267 /* InpuitViewController.swift in Sources */,
 				48B317D422EFEB8000F0F267 /* ViewController.swift in Sources */,
 				48B317D222EFEB8000F0F267 /* AppDelegate.swift in Sources */,
 				48B317E622EFF0E500F0F267 /* Todo.swift in Sources */,
+				482D38C522F3C1CB00C4C006 /* InputViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

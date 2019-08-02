@@ -1,26 +1,29 @@
 //
-//  InpuitViewController.swift
+//  InputViewController.swift
 //  RealmTodo
 //
-//  Created by 堀川浩二 on 2019/07/30.
+//  Created by 堀川浩二 on 2019/08/02.
 //  Copyright © 2019 堀川浩二. All rights reserved.
 //
 
 import UIKit
 import RealmSwift
 
-class InpuitViewController: UIViewController {
-    
+class InputViewController: UIViewController {
+
     @IBOutlet weak var textField: UITextField!
     
-
+    //前の画面から渡されてきたTodoを受け取る
+    var todo: Todo? = nil
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
     }
     
-
+    
     fileprivate func createNewTodo(_ text: String) {
         //Realmに接続
         let realm = try! Realm()
@@ -63,9 +66,10 @@ class InpuitViewController: UIViewController {
         createNewTodo(text)
         
         //前の画面に戻る
+        //navigationControllerの持っている履歴から、一つ前の画面に戻る
         navigationController?.popViewController(animated: true)
         
-
+        
     }
     
     
